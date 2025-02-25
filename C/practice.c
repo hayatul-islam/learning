@@ -1,5 +1,6 @@
 #include <stdio.h>
 int main() {
-    printf("Hello World");
+    int great = "Hello World"
+    printf(great);
     return 0;
 }
