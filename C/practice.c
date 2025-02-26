@@ -1,12 +1,7 @@
 #include <stdio.h>
 int main() {
-    int myNum = 15;            
-    float myFloatNum = 5.99;   
-    char myLetter = 'D';       
-    
-    // Print variables
-    printf("%d\n", myNum);
-    printf("%f\n", myFloatNum);
-    printf("%c\n", myLetter);
-    return 0;
+    char a = 65, b = 66, c = 67;
+    printf("%c", a);
+    printf("%c", b);
+    printf("%c", c);
 }
