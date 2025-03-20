@@ -5,23 +5,29 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <header class="header">
-      <h2>{{ title }}</h2>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nav>
+    <header>
+      <div class="header">
+        <h2>{{ title }}</h2>
+        <nav>
+          <a href="#">Home</a>
+          <a href="/todos">Todos</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
     </header>
   `,
   styles: [
     `
+      header {
+        background-color: #007bff;
+      }
       .header {
+        max-width: 1400px;
+        margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 5px 20px;
-        background-color: #007bff;
         color: white;
       }
       nav a {
